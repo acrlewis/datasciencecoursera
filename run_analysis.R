@@ -19,14 +19,13 @@ y_data <- read.table("train/y_train.txt", header=FALSE, col.names=c("activityid"
 y_data <- rbind(y_data, read.table("test/y_test.txt", header=FALSE, col.names = c("activityid")))
   
 activity_labels <- read.table("activity_labels.txt", header=FALSE, as.is=TRUE, col.names=c("activityid", "activityname"))
-y_data$activity <- activity_labels[y_data$activity,]$activityname
-  
-# subset the data (done early to save memory)
-data_labels <- merge(y_data, activity_labels)
+activities <- activity_labels[ydata$activity,]$activityname
   
 # create a tidy data set that has the average of each variable for each activity and each subject.
-tidy_data <- cbind(subset_data_cols, y_data, x_data)
+tidy_data <- cbind(subject_data, activites, x_data)
 tidy_data.avg <- aggregate(tidy[, 3:dim(tidy)[2]], list(tidy$subject, tidy$activity), mean)
+
+
 names(tidy_data.avg)[1:2] <- c('subject', 'activity')
 
 # create the tidy data set and tidy data avg and save it on to the named files
