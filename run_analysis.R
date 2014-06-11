@@ -26,9 +26,9 @@ y_data$activity <- activity_labels[y_data$activity,]$activityname
 
 # Produce the tidy_data.csv file
 tidy_data <- cbind(subject_data, y_data, x_data)
-write.csv(tidy_data, "tidy_data.csv")
+write.csv(tidy_data, "tidy_data.txt")
 
 # Produce the tidy_data_avg.csv file from the tidy_data.csv
 tidy_data_avg <- aggregate(tidy_data[,3:dim(tidy_data)[2]],list(tidy_data$subject,tidy_data$activity), mean)
 names(tidy_data_avg)[1:2]<-c('subject', 'activity')
-write.csv(tidy_data_avg, "tidy_data_avg.csv")
+write.csv(tidy_data_avg, "tidy_data_avg.txt")
