@@ -15,7 +15,7 @@
  * Appropriately labels the data set with descriptive variable names. 
  * Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
-##Description of data/variables in tidy.csv
+##Description of data/variables in tidy.txt
 |Column Names|
 |--------------|
 |subject |
@@ -99,6 +99,6 @@
     setwd("~/UCI HAR Dataset")
     source('~/development/run_analysis.R')
  * The code will create two files: 
-     * tidy_data.csv
-     * tidy_data_avg.csv 
- *  and place them in the working directory
+     * tidy_data.txt
+     * tidy_data_avg.txt
+ *  and places them in the working directory
