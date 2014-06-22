@@ -5,7 +5,7 @@
 * Download data for the project from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 * Unzip getdata-projectfiles-UCI HAR Dataset.zip to a directory in your home
 
-##Thn create the R script
+##Then create the R script
     nano run_analysis.R
 
 ##The script performs the following actions 
