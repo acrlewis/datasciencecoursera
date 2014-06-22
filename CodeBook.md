@@ -1,4 +1,4 @@
-## CodeBook.md
+# CodeBook.md
 * This codebook.md file is intended to describe the process, variables, data, tranformations and work submitted for the course project in the class Getting and Cleaning Data - getdata-004 on Coursera.com
 
 ##First you must perform these tasks
@@ -94,7 +94,7 @@
 * Mean and StdDev for the triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration
 * Mean and StdDev for the triaxial angular velocity from the gyroscope
 
-##Test script
+#Test script
 ##set the working directory
     setwd("~/UCI HAR Dataset")
     source('~/development/run_analysis.R')
